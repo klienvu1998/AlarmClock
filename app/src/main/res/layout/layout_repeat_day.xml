@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Repeat"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/swRecurring"
+            android:layout_width="60dp"
+            android:layout_height="30dp"/>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <ToggleButton
+            android:id="@+id/toggleBtnMonday"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:textOn="Mon"
+            android:textOff="Mon"
+            android:background="@drawable/toggle_bg_button"
+            android:textColor="@color/toggle_text_button"
+            app:layout_constraintEnd_toStartOf="@+id/toggleBtnTuesday"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ToggleButton
+            android:id="@+id/toggleBtnTuesday"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:textOn="Tue"
+            android:textOff="Tue"
+            android:background="@drawable/toggle_bg_button"
+            android:textColor="@color/toggle_text_button"
+            app:layout_constraintEnd_toStartOf="@+id/toggleBtnWednesday"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/toggleBtnMonday"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ToggleButton
+            android:id="@+id/toggleBtnWednesday"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:textOn="Wed"
+            android:textOff="Wed"
+            android:background="@drawable/toggle_bg_button"
+            android:textColor="@color/toggle_text_button"
+            app:layout_constraintEnd_toStartOf="@+id/toggleBtnThursday"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/toggleBtnTuesday"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ToggleButton
+            android:id="@+id/toggleBtnThursday"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:textOn="Thu"
+            android:textOff="Thu"
+            android:background="@drawable/toggle_bg_button"
+            android:textColor="@color/toggle_text_button"
+            app:layout_constraintEnd_toStartOf="@+id/toggleBtnFriday"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/toggleBtnWednesday"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ToggleButton
+            android:id="@+id/toggleBtnFriday"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:textOn="Fri"
+            android:textOff="Fri"
+            android:background="@drawable/toggle_bg_button"
+            android:textColor="@color/toggle_text_button"
+            app:layout_constraintEnd_toStartOf="@+id/toggleBtnSaturday"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/toggleBtnThursday"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ToggleButton
+            android:id="@+id/toggleBtnSaturday"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:textOn="Sat"
+            android:textOff="Sat"
+            android:background="@drawable/toggle_bg_button"
+            android:textColor="@color/toggle_text_button"
+            app:layout_constraintEnd_toStartOf="@+id/toggleBtnSunday"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/toggleBtnFriday"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ToggleButton
+            android:id="@+id/toggleBtnSunday"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:textOn="Sun"
+            android:textOff="Sun"
+            android:background="@drawable/toggle_bg_button"
+            android:textColor="@color/toggle_text_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/toggleBtnSaturday"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
